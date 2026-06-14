@@ -30,7 +30,7 @@ function About() {
 
       <div className="space-y-5 p-5 sm:p-6">
         <p className="font-mono text-xs uppercase tracking-widest text-emerald-300">
-          Жуниор frontend ажлын байранд боломжтой
+          junior frontend developer
         </p>
 
         <h2 className="text-2xl font-bold text-white">Миний тухай</h2>

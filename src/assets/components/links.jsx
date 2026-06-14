@@ -72,7 +72,9 @@ function Links() {
       </div>
 
       <div className="p-5 sm:p-6">
+        <h1 className="flex justify-center text-2xl font-bold text-yellow-400 pb-7">Social Links</h1>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            
           {links.map((link) => (
             <a
               key={link.label}

@@ -30,16 +30,18 @@ function Hero() {
         <div className="flex flex-col gap-6 rounded-lg border border-white/10 bg-zinc-950/55 backdrop-blur">
           <Navbar title="HOME" />
 
-          <div className="flex flex-col px-5 md:px-8 lg:px-10">
-            <p className="mb-4 font-mono text-xs uppercase tracking-widest text-emerald-300">
+          <div className="flex flex-col items-center justify-center px-5 md:px-8 lg:px-10">
+            <h1 className="max-w-3xl text-center text-4xl font-black leading-tight text-white sm:text-6xl lg:text-7xl">
+              <span className="flex justify-center gap-2 text-green-600">
+                <span>Hi</span>
+                <span className="text-white">, I am</span>
+              </span>
+
+              <span className="block mt-2 text-amber-300">Mungun-Erdene.</span>
+            </h1>
+            <p className="mb-4 font-mono text-xs uppercase tracking-widest text-emerald-300 pt-5">
               Developer · Ulaanbaatar, MN · New graduate
             </p>
-
-            <h1 className="max-w-3xl text-4xl font-black leading-tight text-white sm:text-6xl lg:text-7xl">
-              <span className="text-green-600">Hi</span>, I am
-              <br />
-              <span className="text-amber-300">Mungun-Erdene.</span>
-            </h1>
 
             <p className="mt-5 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
               Have a <span className="text-amber-200">Coffee</span> and check
@@ -47,7 +49,7 @@ function Hero() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 px-5 pb-5 md:grid-cols-4 md:px-8 md:pb-8 lg:px-10 lg:pb-10">
+          <div className="grid grid-cols-2  gap-3 px-5 pb-5 md:grid-cols-4 md:px-8 md:pb-8 lg:px-10 lg:pb-10">
             {menuItems.map((item) => {
               const Icon = item.icon;
               return (
@@ -58,7 +60,7 @@ function Hero() {
                     e.preventDefault();
                     setActive(item.label);
                   }}
-                  className="group flex min-h-24 flex-col justify-between rounded-lg border border-white/10 bg-white/[0.04] p-4 transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:bg-white/[0.08]"
+                  className="group flex min-h- flex-col justify-between rounded-lg border border-white/10 bg-white/[0.04] p-4 transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:bg-white/[0.08]"
                 >
                   <Icon
                     className="w-5 h-5 text-white/40 group-hover:text-amber-300 transition"
